@@ -1,0 +1,22 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loan Eligibility Checker</title>
+</head>
+<body>
+<h1>Loan Eligibility Checker</h1>
+<p>Based on your cibil score, here are the best loan options available for you:</p>
+<ul>
+{% for loan in loan_options %}
+<li>Loan Amount: {{ loan.amount }}</li>
+<li>Interest Rate: {{ loan.interest_rate }}</li>
+<li>Repayment Tenure: {{ loan.tenure }}</li>
+<li>Eligibility Criteria: {{ loan.eligibility_criteria }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
